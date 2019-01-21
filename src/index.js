@@ -823,7 +823,7 @@ class Offline {
 
                 /* LAMBDA PROXY INTEGRATION HAPIJS RESPONSE CONFIGURATION */
 
-                response.statusCode = statusCode = result.statusCode || 200;
+                response.statusCode = statusCode = result.statusCode || errorStatusCode || 200;
 
                 const headers = {};
                 if (result.headers) {
